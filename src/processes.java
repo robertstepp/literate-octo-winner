@@ -30,13 +30,11 @@ public class processes {
 
 	public void countNumbers(BigInteger number) {
 		ArrayList<Integer> countNumber = new ArrayList<>();
-		char[] numberChar = ("" + number).toCharArray();
-		System.out.println(numberChar);
-		for (int i = 0; i < numberChar.length; i = i + 2) {
-			// countNumber.add(numberChar[i]);
+		String intValue = number.toString();
+		for (int i = 0; i < intValue.length(); i = i + 2) {
+			countNumber
+					.add(Integer.parseInt(String.valueOf(intValue.charAt(i))));
 		}
-		System.out.println(countNumber.size());
-		System.out.println(countNumber);
 		for (int i = 0; i < countNumber.size(); i++) {
 			System.out.println(countNumber.get(i).toString());
 		}
