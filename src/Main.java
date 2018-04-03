@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		int columnStart = Integer.parseInt(
 				JOptionPane.showInputDialog(
-						"Wha tis the largest number in the series? (The second column from the left.)"));
+						"What is the largest number in the series? (The second column from the left.)"));
 		int columnEnd = Integer.parseInt(JOptionPane.showInputDialog(
 				"What is the lowest number in the series? (The far right column.)"));
 		if (columnStart < 1) {
@@ -19,7 +19,7 @@ public class Main {
 			procs.createDict(columnStart, columnEnd);
 			// System.out.println(procs.retriveDict());
 		}
-		System.out.println(procs.retrivePrevious());
+		// System.out.println(procs.retrivePrevious());
 
 	}
 }
